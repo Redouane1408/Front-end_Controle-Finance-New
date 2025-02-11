@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -- Heading + text -- */
+.heading-2 {
+    @apply text-3xl font-semibold md:text-5xl;
+  }
+
+  .heading-3 {
+    @apply text-lg font-semibold md:text-2xl;
+  }
+
+  .text-less-emphasis {
+    @apply text-gray-500;
+  }
+
+  /* -- Sections -- */
+  .section-width {
+    @apply mx-auto max-w-[1500px] px-5 md:px-9 lg:px-24 xl:px-36;
+  }
+
+  .section-padding-y {
+    @apply py-16 md:py-20 lg:py-28 xl:py-36;
+  }
+
+  /* -- Hover + Transitions -- */
+  .transition-2s {
+    @apply transition-all duration-200 ease-in;
+  }
+
+  .hover-translate-y {
+    @apply hover:-translate-y-1;
+  }
+
+  @layer base {
+  :root {
+        --radius: 0.5rem
+    }
+}
