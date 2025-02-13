@@ -3,11 +3,19 @@ import { LoginForm } from "@/components/molecules/login-form";
 //import LoginForm from "@/components/organisms/LoginForm";
 const LoginPage: React.FC = () => {
   return (
-    <div className="bg-muted flex min-h-svh flex-col items-center justify-center p-6 md:p-10">
-      <div className="w-full max-w-sm md:max-w-3xl">
-        <LoginForm />
-      </div>
+    <div className="flex justify-end items-center h-screen">
+
+        <div className="bg-primary w-full h-full mr-64 justify-items-start bg-[url('/logo.svg')] bg-no-repeat bg-center ">
+        </div>
+
+        <div className="px-6 md:p-50 mr-64">
+            <div className="w-full max-w-sm md:max-w-3xl">
+                <LoginForm />
+            </div>
+        </div>
     </div>
+
+
   );
 };
 

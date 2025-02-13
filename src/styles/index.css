@@ -1,40 +1,56 @@
+@import "@fontsource/poppins/"; /* Imports the full font */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+
+/* ... */
+
+:root {
+    --primary: #107D98;
+    --secondary: #9DDDE7;
+    --title1: #1B1B1B;
+    --title2: #797979;
+    --title3: #A0AEC0;
+    --paragraphe: #323232;
+    --validation: #44F379;
+    --error: #E08585;
+    --warning: #FF7C2B;
+    --ButtonNeutral: #00A2C7;
+    --ButtonHover: #107D98;
+    --radius: 0.5rem;
+}
+
 /* -- Heading + text -- */
 .heading-2 {
     @apply text-3xl font-semibold md:text-5xl;
-  }
-
-  .heading-3 {
-    @apply text-lg font-semibold md:text-2xl;
-  }
-
-  .text-less-emphasis {
-    @apply text-gray-500;
-  }
-
-  /* -- Sections -- */
-  .section-width {
-    @apply mx-auto max-w-[1500px] px-5 md:px-9 lg:px-24 xl:px-36;
-  }
-
-  .section-padding-y {
-    @apply py-16 md:py-20 lg:py-28 xl:py-36;
-  }
-
-  /* -- Hover + Transitions -- */
-  .transition-2s {
-    @apply transition-all duration-200 ease-in;
-  }
-
-  .hover-translate-y {
-    @apply hover:-translate-y-1;
-  }
-
-  @layer base {
-  :root {
-        --radius: 0.5rem
-    }
 }
+
+.heading-3 {
+    @apply text-lg font-semibold md:text-2xl;
+}
+
+.text-less-emphasis {
+    @apply text-gray-500;
+}
+
+/* -- Sections -- */
+.section-width {
+    @apply mx-auto max-w-[1500px] px-5 md:px-9 lg:px-24 xl:px-36;
+}
+
+.section-padding-y {
+    @apply py-16 md:py-20 lg:py-28 xl:py-36;
+}
+
+/* -- Hover + Transitions -- */
+.transition-2s {
+    @apply transition-all duration-200 ease-in;
+}
+
+.hover-translate-y {
+    @apply hover:-translate-y-1;
+}
+
+
